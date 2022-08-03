@@ -9,9 +9,10 @@ import UIKit
 
 class AllTabBarController: UITabBarController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBar.backgroundColor = .clear
+        //self.tabBar.backgroundColor = .clear
 
         //首页
         let homeViewController = UINavigationController(rootViewController: HomeViewController())
@@ -23,9 +24,7 @@ class AllTabBarController: UITabBarController {
         
         self.setViewControllers([homeViewController, personalViewController], animated: false)
         
-        guard let items = self.tabBar.items else {
-            return
-        }
+        guard let items = self.tabBar.items else { return }
         
         let images = ["list.bullet.rectangle", "person"]
         for item in 0..<items.count {
