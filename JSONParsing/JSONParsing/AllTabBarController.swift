@@ -19,16 +19,13 @@ class AllTabBarController: UITabBarController {
         //我的
         let personalViewController = UINavigationController(rootViewController: PersonalViewController())
         
-        homeViewController.title = "首页"
-        personalViewController.title = "我的"
-        
         self.setViewControllers([homeViewController, personalViewController], animated: false)
         
         guard let items = self.tabBar.items else { return }
         
         let images = ["list.bullet.rectangle", "person"]
         for item in 0..<items.count {
-            items[0].badgeValue = "2"
+            //items[0].badgeValue = "2"
             items[item].image = UIImage(systemName: images[item])
         }
         

@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let allTabBarController = AllTabBarController()
         window?.rootViewController = allTabBarController
+        //让窗口展示出来
         window?.makeKeyAndVisible()
         
     }

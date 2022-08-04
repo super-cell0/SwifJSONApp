@@ -9,8 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource{
     
+    //接受json解析的值
     var courses: [Course] = []
-    
+    //自定一个tableView列表
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -20,14 +21,18 @@ class HomeViewController: UIViewController, UITableViewDataSource{
         return tableView
     }()
 
+    //MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "首页"
-        
+        title = "home"
         loadData()
         //print(courses[0].title)
         self.view.addSubview(tableView)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         setTabelViewUI()
     }
     
@@ -43,9 +48,9 @@ extension HomeViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homecell", for: indexPath) as! HomeTableViewCell
         
+        //默认列表内容配置
 //        var contentConfig = cell.defaultContentConfiguration()
 //        contentConfig.text = courses[indexPath.row].title
-//        
 //        cell.contentConfiguration = contentConfig
         cell.course = courses[indexPath.row]
         
@@ -55,6 +60,8 @@ extension HomeViewController {
 }
 
 extension HomeViewController {
+    //MARK: 解析JSON数据标准格式
+    ///解析JSON数据标准格式
     func loadData() {
         if let coursesJSONURL = Bundle.main.url(forResource: "courses", withExtension: "json") {
             if let coursesJSONData = try? Data(contentsOf: coursesJSONURL) {
@@ -65,11 +72,9 @@ extension HomeViewController {
                 } catch  {
                     print(error)
                 }
-                
             } else {
                 print("url转化Data失败")
             }
-            
         } else {
             print("从courses.json文件中获取url失败 检查拼写")
         }
