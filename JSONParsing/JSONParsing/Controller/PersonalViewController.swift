@@ -23,7 +23,7 @@ class PersonalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Personal"
+
         loadDataFromJSON()
         view.addSubview(tableView)
 
@@ -44,13 +44,6 @@ extension PersonalViewController {
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
-//        NSLayoutConstraint.activate([
-//            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-//            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            tableView.bottomAnchor.constraint(equalTo: view..bottomAnchor),
-//            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-//        ])
     }
 }
 

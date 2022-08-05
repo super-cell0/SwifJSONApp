@@ -17,6 +17,7 @@ class HomeViewController: UIViewController, UITableViewDataSource{
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homecell")
+        tableView.backgroundColor = .systemPink
         
         return tableView
     }()
@@ -25,7 +26,6 @@ class HomeViewController: UIViewController, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "home"
         loadData()
         //print(courses[0].title)
         self.view.addSubview(tableView)
@@ -84,8 +84,8 @@ extension HomeViewController {
 
 extension HomeViewController {
     func setTabelViewUI() {
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
