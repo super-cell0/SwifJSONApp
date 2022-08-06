@@ -54,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890C9E0C289EBC54001D2745 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9B32C8E827F1741800AAC93B /* 解析普通的JSON数据.playground */,
+				9BC3E98727F1CEFA00F2C6FC /* 解析数组类型的JSON数据.playground */,
+				9BC3E98827F1E09B00F2C6FC /* 自定义映射.playground */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		89721B5F289D7B840064CCBE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +83,7 @@
 		9BC1684827F0AAC500F25AD2 = {
 			isa = PBXGroup;
 			children = (
-				9B32C8E827F1741800AAC93B /* 解析普通的JSON数据.playground */,
-				9BC3E98727F1CEFA00F2C6FC /* 解析数组类型的JSON数据.playground */,
-				9BC3E98827F1E09B00F2C6FC /* 自定义映射.playground */,
+				890C9E0C289EBC54001D2745 /* test */,
 				9BC1685327F0AAC500F25AD2 /* JSONParsing */,
 				9BC1685227F0AAC500F25AD2 /* Products */,
 			);
