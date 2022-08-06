@@ -26,6 +26,7 @@ class BookViewController: UIViewController {
 
         view.backgroundColor = .systemBackground
         view.addSubview(sheetButton)
+        sheetButtonAction()
     }
     
     override func viewDidLayoutSubviews() {
@@ -35,5 +36,13 @@ class BookViewController: UIViewController {
 
     private func setBookAnyUI() {
         sheetButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 100 , y: 100, width: 200, height: 44)
+    }
+    
+    private func sheetButtonAction() {
+        sheetButton.addTarget(self, action: #selector(sheetAction), for: .touchUpInside)
+    }
+    
+    @objc func sheetAction() {
+        print("4444")
     }
 }
