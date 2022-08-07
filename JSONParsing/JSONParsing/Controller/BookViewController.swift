@@ -94,11 +94,13 @@ class BookViewController: UIViewController {
         sheetButton2.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(sheetButton2)
         
+        sheetButton3.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(sheetButton3)
+        
         sheetView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(sheetView)
         
-        sheetButton3.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(sheetButton3)
+
     }
     
     override func viewDidLayoutSubviews() {
@@ -112,7 +114,9 @@ class BookViewController: UIViewController {
         
         sheetButton3.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 100, y: 140 + sheetButton1.bounds.height * 2, width: 200, height: 44)
 
-        sheetView.frame = CGRect(x: 20, y: 500, width: UIScreen.main.bounds.width - 40, height: 300)
+//        sheetView.frame = CGRect(x: 20, y: 500, width: UIScreen.main.bounds.width - 40, height: 300)
+        sheetView.frame = CGRect(x: 20, y: UIScreen.main.bounds.maxY - 280 - 20, width: UIScreen.main.bounds.width - 40, height: 280)
+        
 //        sheetView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
 //        sheetView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
 //        sheetView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true

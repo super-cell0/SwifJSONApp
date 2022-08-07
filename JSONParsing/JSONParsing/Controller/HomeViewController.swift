@@ -17,7 +17,6 @@ class HomeViewController: UIViewController, UITableViewDataSource{
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homecell")
-        tableView.backgroundColor = .systemPink
         
         return tableView
     }()
