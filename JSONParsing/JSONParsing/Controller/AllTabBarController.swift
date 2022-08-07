@@ -34,7 +34,7 @@ class AllTabBarController: UITabBarController {
             items[item].image = UIImage(systemName: images[item])
         }
         
-        let tabbarTitles = ["更新", "我的", "书籍", "收藏"]
+        //let tabbarTitles = ["更新", "我的", "书籍", "收藏"]
 //        for title in 0..<tabbarTitles.count {
 //            titles[title].self = tabbarTitles[title]
 //        }
