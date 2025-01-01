@@ -16,20 +16,11 @@ class SheetViewController: UIViewController, UISheetPresentationControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .systemCyan
+        self.view.backgroundColor = .systemBackground
         sheetPresent.delegate = self
         sheetPresentSetting()
     }
     
-    /*
-    // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     private func sheetPresentSetting() {
         sheetPresent.selectedDetentIdentifier = .large
         sheetPresent.prefersGrabberVisible = true

@@ -48,9 +48,6 @@ extension HomeViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homecell", for: indexPath) as! HomeTableViewCell
         
         //默认列表内容配置
-//        var contentConfig = cell.defaultContentConfiguration()
-//        contentConfig.text = courses[indexPath.row].title
-//        cell.contentConfiguration = contentConfig
         cell.course = courses[indexPath.row]
         
         return cell
@@ -59,7 +56,6 @@ extension HomeViewController {
 }
 
 extension HomeViewController {
-    //MARK: 解析JSON数据标准格式
     ///解析JSON数据标准格式
     func loadData() {
         if let coursesJSONURL = Bundle.main.url(forResource: "courses", withExtension: "json") {

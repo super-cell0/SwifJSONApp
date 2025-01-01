@@ -45,19 +45,12 @@ class BookViewController: UIViewController {
         return button
     }()
     
-//    private lazy var sheetButton1 = UIButton(configuration: .filled(), primaryAction: .init(handler: { _ in
-//        let storyBoard = UIStoryboard(name: "Sheet", bundle: nil)
-//        let sheetPresenttationVC = storyBoard.instantiateViewController(withIdentifier: "SheetViewControllerID") as! SheetViewController
-//        self.present(sheetPresenttationVC, animated: true, completion: nil)
-//    }))
-    
     private lazy var boardManager: BLTNItemManager = {
         let item  = BLTNPageItem(title: "推送通知")
-        //128x128px
         item.image = UIImage(systemName: "square.and.arrow.up")
         item.actionButtonTitle = "继续"
         item.alternativeButtonTitle = "下一步"
-        item.descriptionText = "beidixiaoxiong is super-cell0"
+        item.descriptionText = "description"
         item.actionHandler = { _ in
             BookViewController.didTapBoardContinue()
         }
@@ -97,8 +90,8 @@ class BookViewController: UIViewController {
         sheetButton3.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(sheetButton3)
         
-        sheetView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(sheetView)
+        //sheetView.translatesAutoresizingMaskIntoConstraints = false
+        //self.view.addSubview(sheetView)
         
 
     }
@@ -114,14 +107,7 @@ class BookViewController: UIViewController {
         
         sheetButton3.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 100, y: 140 + sheetButton1.bounds.height * 2, width: 200, height: 44)
 
-//        sheetView.frame = CGRect(x: 20, y: 500, width: UIScreen.main.bounds.width - 40, height: 300)
-        sheetView.frame = CGRect(x: 20, y: UIScreen.main.bounds.maxY - 280 - 20, width: UIScreen.main.bounds.width - 40, height: 280)
-        
-//        sheetView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
-//        sheetView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-//        sheetView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-//        sheetView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-
+        //sheetView.frame = CGRect(x: 20, y: UIScreen.main.bounds.maxY - 280 - 20, width: UIScreen.main.bounds.width - 40, height: 280)
     }
     
 }

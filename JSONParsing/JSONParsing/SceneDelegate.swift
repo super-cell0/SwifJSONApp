@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let allTabBarController = AllTabBarController()
+        let allTabBarController = BaseTabBarController()
         window?.rootViewController = allTabBarController
         //让窗口展示出来
         window?.makeKeyAndVisible()

@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		02389799A9D7DEA88D7D8C43 /* Pods_JSONParsing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2C89D96E392350FEF5FCBF /* Pods_JSONParsing.framework */; };
-		890C9E0E28A01890001D2745 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C9E0D28A01890001D2745 /* SheetViewController.swift */; };
-		890C9E1028A0189B001D2745 /* Sheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890C9E0F28A0189B001D2745 /* Sheet.storyboard */; };
+		74DF88D02D2577F20097824C /* Sheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DF88CE2D2577F20097824C /* Sheet.storyboard */; };
+		74DF88D12D2577F20097824C /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF88CF2D2577F20097824C /* SheetViewController.swift */; };
 		89721B5C289D7B020064CCBE /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89721B5B289D7B020064CCBE /* BookViewController.swift */; };
-		89721B5E289D7B640064CCBE /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89721B5D289D7B640064CCBE /* CollectViewController.swift */; };
-		89B18DD8289C18800042A61F /* PersonalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B18DD7289C18800042A61F /* PersonalTableViewCell.swift */; };
 		9B09CBF227F3505100011E78 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B09CBF127F3505100011E78 /* courses.json */; };
 		9B09CBF427F350AC00011E78 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CBF327F350AC00011E78 /* Courses.swift */; };
 		9BC1685527F0AAC500F25AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1685427F0AAC500F25AD2 /* AppDelegate.swift */; };
@@ -21,18 +19,15 @@
 		9BC1686127F0AAC500F25AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC1685F27F0AAC500F25AD2 /* LaunchScreen.storyboard */; };
 		9BC1686927F0B13400F25AD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1686827F0B13400F25AD2 /* HomeViewController.swift */; };
 		9BC1686B27F0B22400F25AD2 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1686A27F0B22400F25AD2 /* HomeTableViewCell.swift */; };
-		9BC1686D27F0B45800F25AD2 /* AllTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1686C27F0B45800F25AD2 /* AllTabBarController.swift */; };
-		9BC1686F27F0B51700F25AD2 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1686E27F0B51700F25AD2 /* PersonalViewController.swift */; };
+		9BC1686D27F0B45800F25AD2 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1686C27F0B45800F25AD2 /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F31FF8CC8299FE44B04DF91 /* Pods-JSONParsing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONParsing.release.xcconfig"; path = "Target Support Files/Pods-JSONParsing/Pods-JSONParsing.release.xcconfig"; sourceTree = "<group>"; };
 		6D2C89D96E392350FEF5FCBF /* Pods_JSONParsing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONParsing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		890C9E0D28A01890001D2745 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
-		890C9E0F28A0189B001D2745 /* Sheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sheet.storyboard; sourceTree = "<group>"; };
+		74DF88CE2D2577F20097824C /* Sheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sheet.storyboard; sourceTree = "<group>"; };
+		74DF88CF2D2577F20097824C /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		89721B5B289D7B020064CCBE /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
-		89721B5D289D7B640064CCBE /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
-		89B18DD7289C18800042A61F /* PersonalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableViewCell.swift; sourceTree = "<group>"; };
 		9B09CBF127F3505100011E78 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
 		9B09CBF327F350AC00011E78 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 		9B32C8E827F1741800AAC93B /* 解析普通的JSON数据.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "解析普通的JSON数据.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -44,8 +39,7 @@
 		9BC1686227F0AAC500F25AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BC1686827F0B13400F25AD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9BC1686A27F0B22400F25AD2 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		9BC1686C27F0B45800F25AD2 /* AllTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTabBarController.swift; sourceTree = "<group>"; };
-		9BC1686E27F0B51700F25AD2 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		9BC1686C27F0B45800F25AD2 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		9BC3E98727F1CEFA00F2C6FC /* 解析数组类型的JSON数据.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "解析数组类型的JSON数据.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9BC3E98827F1E09B00F2C6FC /* 自定义映射.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "自定义映射.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D7E335E8B6FE57D9E7585271 /* Pods-JSONParsing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONParsing.debug.xcconfig"; path = "Target Support Files/Pods-JSONParsing/Pods-JSONParsing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +74,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		74DF88CD2D2575650097824C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BC1686A27F0B22400F25AD2 /* HomeTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		890C9E0C289EBC54001D2745 /* test */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,16 +95,11 @@
 		89721B5F289D7B840064CCBE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9BC1686C27F0B45800F25AD2 /* AllTabBarController.swift */,
+				9BC1686C27F0B45800F25AD2 /* BaseTabBarController.swift */,
 				9BC1686827F0B13400F25AD2 /* HomeViewController.swift */,
-				9BC1686A27F0B22400F25AD2 /* HomeTableViewCell.swift */,
-				9BC1686E27F0B51700F25AD2 /* PersonalViewController.swift */,
-				89B18DD7289C18800042A61F /* PersonalTableViewCell.swift */,
 				89721B5B289D7B020064CCBE /* BookViewController.swift */,
-				890C9E0D28A01890001D2745 /* SheetViewController.swift */,
-				890C9E0F28A0189B001D2745 /* Sheet.storyboard */,
-				89721B5D289D7B640064CCBE /* CollectViewController.swift */,
-				9B09CBF127F3505100011E78 /* courses.json */,
+				74DF88CF2D2577F20097824C /* SheetViewController.swift */,
+				74DF88CE2D2577F20097824C /* Sheet.storyboard */,
 				9B09CBF327F350AC00011E78 /* Courses.swift */,
 			);
 			path = Controller;
@@ -130,12 +127,14 @@
 		9BC1685327F0AAC500F25AD2 /* JSONParsing */ = {
 			isa = PBXGroup;
 			children = (
+				74DF88CD2D2575650097824C /* View */,
 				89721B5F289D7B840064CCBE /* Controller */,
 				9BC1685427F0AAC500F25AD2 /* AppDelegate.swift */,
 				9BC1685627F0AAC500F25AD2 /* SceneDelegate.swift */,
 				9BC1685D27F0AAC500F25AD2 /* Assets.xcassets */,
 				9BC1685F27F0AAC500F25AD2 /* LaunchScreen.storyboard */,
 				9BC1686227F0AAC500F25AD2 /* Info.plist */,
+				9B09CBF127F3505100011E78 /* courses.json */,
 			);
 			path = JSONParsing;
 			sourceTree = "<group>";
@@ -200,7 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				890C9E1028A0189B001D2745 /* Sheet.storyboard in Resources */,
+				74DF88D02D2577F20097824C /* Sheet.storyboard in Resources */,
 				9BC1686127F0AAC500F25AD2 /* LaunchScreen.storyboard in Resources */,
 				9B09CBF227F3505100011E78 /* courses.json in Resources */,
 				9BC1685E27F0AAC500F25AD2 /* Assets.xcassets in Resources */,
@@ -256,16 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC1686D27F0B45800F25AD2 /* AllTabBarController.swift in Sources */,
-				89721B5E289D7B640064CCBE /* CollectViewController.swift in Sources */,
-				890C9E0E28A01890001D2745 /* SheetViewController.swift in Sources */,
+				9BC1686D27F0B45800F25AD2 /* BaseTabBarController.swift in Sources */,
 				9BC1685527F0AAC500F25AD2 /* AppDelegate.swift in Sources */,
 				9B09CBF427F350AC00011E78 /* Courses.swift in Sources */,
 				9BC1685727F0AAC500F25AD2 /* SceneDelegate.swift in Sources */,
+				74DF88D12D2577F20097824C /* SheetViewController.swift in Sources */,
 				9BC1686B27F0B22400F25AD2 /* HomeTableViewCell.swift in Sources */,
-				89B18DD8289C18800042A61F /* PersonalTableViewCell.swift in Sources */,
 				89721B5C289D7B020064CCBE /* BookViewController.swift in Sources */,
-				9BC1686F27F0B51700F25AD2 /* PersonalViewController.swift in Sources */,
 				9BC1686927F0B13400F25AD2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +402,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XNM269JAPT;
+				DEVELOPMENT_TEAM = MXVY2MC9Y8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JSONParsing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -434,7 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XNM269JAPT;
+				DEVELOPMENT_TEAM = MXVY2MC9Y8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JSONParsing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
